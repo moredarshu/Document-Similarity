@@ -1,0 +1,12 @@
+<html>
+    <head><title>Document Similarity</title></head>
+    <body>
+        <form action = "{{url_for('similarity')}}" method="POST">
+            <input type="text" name="doc1" placeholder="Document1" required="required"/>
+            <input type="text" name="doc2" placeholder="Document2" required="required"/>
+            <button type="submit">Click Me</button>
+        </form>
+        {{prediction_text}}
+    </body>
+
+</html>
